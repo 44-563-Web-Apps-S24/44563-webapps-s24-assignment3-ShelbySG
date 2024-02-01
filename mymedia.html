@@ -49,5 +49,18 @@ alt=“a picture of Shelby Godding” >
 </tr>
 </table>
 
+<hr>
+
+<h6>Code Snippet</h6>
+<p>
+Code snippet that performs left to right function composition.
+</p>
+<pre>
+    const compose = (...fns: Func[]) => {
+        fns.reduce((f, g) => (...args: any[]) => f(...castArray(g(...args))));
+    }
+</pre>
+
+<a href=“https://code.pieces.app/collections/typescript”> Code Snippet</a>
 </body>
 </html>
